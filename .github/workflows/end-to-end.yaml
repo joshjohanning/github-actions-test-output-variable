@@ -61,10 +61,10 @@ jobs:
       run: |
         #url="$(terraform output -raw slotURL)"
         url="myazurewebsite.net"
-        fqdn="http://$url"
+        fqdn="http://${url}"
         #fqdn="http://boo"
-        echo "::set-output name=webapp_url::$fqdn"
-        echo "$fqdn"
+        echo "::set-output name=webapp_url::${fqdn}"
+        echo "${fqdn}"
     
     # - name: Azure logout
     #   run: az logout
