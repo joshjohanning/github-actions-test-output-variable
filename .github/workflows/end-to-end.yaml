@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       env_name: DEV
-    defaults:
-      run:
-        working-directory: ${{ env.tf_dir }}
+    # defaults:
+    #   run:
+    #     working-directory: ${{ env.tf_dir }}
     environment:
       name: DEV
     outputs:
