@@ -65,8 +65,8 @@ jobs:
         #fqdn="http://boo"
         echo '::set-output name=webapp_url::$fqdn'
     
-    - name: Azure logout
-      run: az logout
+    # - name: Azure logout
+    #   run: az logout
 
   dev_deploy:
     needs: dev_infra_apply
